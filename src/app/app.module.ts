@@ -11,6 +11,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MenuComponent } from './components/menu/menu.component';
 
+import { ROUTES } from './app.routes';
+import { RouterModule } from '@angular/router';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +28,8 @@ import { MenuComponent } from './components/menu/menu.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]
